@@ -1,0 +1,301 @@
+/* ========== RESET ========== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+/* ========== عام ========== */
+body {
+  background: url("images/background basic1.jpg") center/cover no-repeat ;
+  font-family: 'Lateef', serif;
+  line-height: 1.6;
+  color: #333;
+}
+
+/* ========== الهيدر ========== */
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  background: rgba(255,255,255,0.85);
+  border-bottom: 3px solid #a05901;
+}
+
+.text-eng {
+  font-family: fantasy;
+  font-size: 24px;
+  color: #a05901;
+  margin-right: 15px;
+}
+
+.photo1 {
+  width: 80px;
+  height: 80px;
+}
+
+/* ========== المحتوى الرئيسي ========== */
+.main {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 20px;
+  gap: 20px;
+}
+
+.photo2 {
+  width: 300px;
+  max-width: 100%;
+}
+
+.text-main {
+  max-width: 600px;
+  text-align: center;
+}
+
+.h1-text {
+  font-size: 28px;
+  color: #964c0a;
+  margin-bottom: 15px;
+}
+
+/* ========== الأزرار الرئيسية ========== */
+.box-tabs {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin: 25px auto;
+}
+
+.btn-move {
+  padding: 12px 25px;
+  font-size: 16px;
+  background: #4c3a22;
+  color: #fff;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: 0.3s;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+}
+.btn-move:hover {
+  background: #9a4917;
+  transform: translateY(-3px);
+}
+
+/* ========== صفحة من نحن ========== */
+.about-box {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 30px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+  text-align: center;
+}
+.contact {
+    text-align: center;
+    margin: 50px 0;
+}
+
+.contact h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #4c3a22;
+}
+
+.social-icons a {
+    display: inline-block;
+    margin: 0 15px;
+    font-size: 30px;
+    color: #4c3a22;
+    transition: all 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #9a4917;
+    transform: scale(1.2);
+}
+/* ========== صفحة الدورات ========== */
+
+header {
+background: #9a4917;
+  color: #fff;
+  text-align: center;
+  padding: 15px 0;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.search-box {
+  text-align: center;
+  margin: 20px;
+}
+
+.search-box input {
+  padding: 10px;
+  width: 60%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.courses {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.course {
+  background: #fff;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  transition: transform 0.2s;
+    font-family: 'Lateef', serif;
+}
+
+.course:hover {
+  transform: translateY(-5px);
+}
+
+.course h3 {
+  margin: 0 0 10px;
+  color: #9a4917;
+}
+
+.course p {
+  margin: 0;
+  color: #353535;
+    font-family: 'Lateef', serif;
+}
+/* شاشة منبثقة */
+.modal {
+  display: none; 
+  position: fixed;
+  z-index: 1001;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.5);
+  transition: all 0.3s ease-in-out;
+}
+
+.modal-content {
+  background-color: #fff;
+  margin: 15% auto;
+  padding: 20px;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 400px;
+  text-align: center;
+  transform: scale(0.7);
+  transition: all 0.3s ease-in-out;
+}
+
+.modal.show .modal-content {
+  transform: scale(1);
+}
+
+.modal-content button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #4c3a22;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.modal-content button:hover {
+  background-color: #9a4917;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close:hover {
+  color: rgb(246, 1, 1);
+}
+
+
+/* ========== صفحة التسجيل ========== */
+.container-reg {
+  max-width: 800px;
+  margin: 40px auto;
+  display: grid;
+  gap: 20px;
+}
+
+.step {
+  background: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+  border-right: 6px solid #daf700;
+  transition: 0.2s;
+}
+.step:hover {
+  transform: translateY(-5px);
+}
+
+/* ========== صفحة الطلاب ========== */
+.container-stu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 70vh;
+}
+
+.message {
+  font-size: 20px;
+  background: #fff;
+  padding: 20px 40px;
+  border-radius: 12px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+}
+
+/* ========== التذييل ========== */
+footer {
+  background: #a05901;
+  color: #fff;
+  text-align: center;
+  padding: 12px;
+  font-size: 16px;
+ border-radius: 30px;
+}
+
+/* ========== Media Queries ========== */
+@media (max-width: 1024px) {
+  .text-eng { font-size: 20px; }
+  .h1-text { font-size: 28px; }
+}
+
+@media (max-width: 768px) {
+  .header { flex-direction: column; }
+  .text-eng { margin: 10px 0; }
+  .main { flex-direction: column; }
+  .photo2 { width: 220px; }
+  .h1-text { font-size: 27px; }
+}
+
+@media (max-width: 480px) {
+  .photo1 { width: 50px; height: 50px; }
+  .photo2 { width: 180px; }
+  .btn-move { font-size: 14px; padding: 10px 18px; }
+  footer { font-size: 15px; }
+}
