@@ -1,20 +1,15 @@
-/* ========== RESET ========== */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   text-decoration: none;
 }
-
-/* ========== عام ========== */
 body {
   background: url("images/background basic1.jpg") center/cover no-repeat ;
   font-family: 'Lateef', serif;
   line-height: 1.6;
   color: #333;
 }
-
-/* ========== الهيدر ========== */
 .header {
   display: flex;
   justify-content: center;
@@ -23,7 +18,6 @@ body {
   background: rgba(255,255,255,0.85);
   border-bottom: 3px solid #a05901;
 }
-
 .text-eng {
   font-family: fantasy;
   font-size: 24px;
@@ -36,7 +30,7 @@ body {
   height: 80px;
 }
 
-/* ========== المحتوى الرئيسي ========== */
+
 .main {
   display: flex;
   justify-content: space-around;
@@ -45,24 +39,19 @@ body {
   padding: 20px;
   gap: 20px;
 }
-
 .photo2 {
   width: 300px;
   max-width: 100%;
 }
-
 .text-main {
   max-width: 600px;
   text-align: center;
 }
-
 .h1-text {
   font-size: 28px;
   color: #964c0a;
   margin-bottom: 15px;
 }
-
-/* ========== الأزرار الرئيسية ========== */
 .box-tabs {
   display: flex;
   justify-content: center;
@@ -70,7 +59,6 @@ body {
   gap: 15px;
   margin: 25px auto;
 }
-
 .btn-move {
   padding: 12px 25px;
   font-size: 16px;
@@ -86,8 +74,6 @@ body {
   background: #9a4917;
   transform: translateY(-3px);
 }
-
-/* ========== صفحة من نحن ========== */
 .about-box {
   max-width: 800px;
   margin: 40px auto;
@@ -101,7 +87,6 @@ body {
     text-align: center;
     margin: 50px 0;
 }
-
 .contact h3 {
     font-size: 24px;
     margin-bottom: 20px;
@@ -120,7 +105,7 @@ body {
     color: #9a4917;
     transform: scale(1.2);
 }
-/* ========== صفحة الدورات ========== */
+
 
 header {
 background: #9a4917;
@@ -233,7 +218,7 @@ background: #9a4917;
 }
 
 
-/* ========== صفحة التسجيل ========== */
+
 .container-reg {
   max-width: 800px;
   margin: 40px auto;
@@ -253,7 +238,7 @@ background: #9a4917;
   transform: translateY(-5px);
 }
 
-/* ========== صفحة الطلاب ========== */
+
 .container-stu {
   display: flex;
   justify-content: center;
@@ -269,7 +254,7 @@ background: #9a4917;
   box-shadow: 0 3px 8px rgba(0,0,0,0.1);
 }
 
-/* ========== التذييل ========== */
+
 footer {
   background: #a05901;
   color: #fff;
@@ -279,7 +264,7 @@ footer {
  border-radius: 30px;
 }
 
-/* ========== Media Queries ========== */
+
 @media (max-width: 1024px) {
   .text-eng { font-size: 20px; }
   .h1-text { font-size: 28px; }
