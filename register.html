@@ -1,37 +1,57 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>طريقة التسجيل</title>
-  <link rel="stylesheet" href="style.css">
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>طريقة التسجيل</title>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"> 
+   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>طريقة التسجيل</header>
+  <header>طريقة التسجيل
+    <i class="fa-regular fa-id-card"></i>
+  </header>
 
-  <div class="container-reg">
-    <div class="step">
-      <h2>الخطوة 1</h2>
-      <p>التواصل على رقم تيليجرام أو واتساب.</p>
-    </div>
 
-    <div class="step">
-      <h2>الخطوة 2</h2>
-      <p>إرسال المعلومات المطلوبة (الاسم الثلاثي، الصف، المنطقة).</p>
-    </div>
+<div class="container-reg">
+  <div class="step">
+    <h2>الخطوة 1</h2>
+    <p style="font-size: 20px;">
+      التواصل على رقم 
+      <div class="social-icons">
+        <a href="https://t.me/fx_2z" target="_blank">تلجرام<i class="fa-brands fa-telegram"></i></a>
+        أو <a href="https://wa.me/05356726514" target="_blank">واتساب<i class="fa-brands fa-whatsapp"></i></a>.
+      </div>
+    </p>
+    <p style="font-size: 20px;">وإرسال المعلومات المطلوبة (الاسم الثلاثي، الصف، المنطقة)</p>
+  </div>
 
-    <div class="step">
-      <h2>الخطوة 3</h2>
-      <p>دفع الرسوم المطلوبة عبر <strong>شام كاش</strong> (5 دولار للشهر كاملاً) وإعلام المؤسسة بذلك.</p>
+  <div style="cursor: pointer;" class="step " id="step2">
+    <h2>الخطوة 2</h2>
+    <p style="font-size: 20px;">دفع الرسوم المطلوبة عبر <strong>شام كاش</strong> (5 دولار للشهر كاملاً) وإعلام المؤسسة بذلك.</p>
+  </div>
+</div>
+
+  <a id="contactBtn" href="index.html" target="_self">
+    <button class="btn-move back">العودة للصفحة الرئيسية</button>
+  </a>
+  <a id="contactBtn" href="course.html" target="_self">
+    <button class="btn-move">رؤية الدورات المتاحة</button>
+  </a>
+<div id="popup2" class="popup2">
+  <div class="popup-content2">
+    <span class="close2">&times;</span>
+    <h2>دفع الرسوم</h2>
+    <img src="images/photo_2025-09-24_19-17-44.jpg" alt="باركود" class="barcode2">
+    <div class="text-copy2">
+      <input readonly type="text" id="copyText2" value="41174367aa69bf3b85e97c4142794f15">
+      <button onclick="copyText2()">نسخ</button>
     </div>
   </div>
-   <a id="contactBtn" href="index.html" target="_self">
-            
-            <button class="btn-move back">العودة للصفحة الرئيسية</button>
-        </a>
-   <a id="contactBtn" href="course.html" target="_self">
-            
-            <button class="btn-move ">رؤية الدورات المتاحة</button>
-        </a>
+</div>
+
+
+
+  <script src="script.js"></script>
 </body>
 </html>
