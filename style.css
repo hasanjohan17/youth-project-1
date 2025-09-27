@@ -75,7 +75,7 @@ body {
 .btn-move {
   padding: 12px 25px;
   font-size: 16px;
-  background: #4c3a22;
+  background: #2B96a1;
   color: #fff;
   border: none;
   border-radius: 25px;
@@ -364,6 +364,5 @@ footer {
 .text-copy2 button:hover{
     background: #e0aa59;
 }
-
 
 
